@@ -1,4 +1,5 @@
 
+//Sep 28 2020. T.I. removed unnecessary statement 
 //Sep 28 2020. T.I. removed the case "0" for the serial command parser 
 //Sep 28 2020. T.I. created this file
 
@@ -30,8 +31,6 @@ void setup() {
 void loop() {
   
   // put your main code here, to run repeatedly:
-
-  int i = 0;
 
   
   if (Serial.available() > 0) {
