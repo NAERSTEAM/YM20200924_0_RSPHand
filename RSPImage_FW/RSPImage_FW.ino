@@ -1,4 +1,5 @@
 
+//Sep 30 20202 T.I. Added servo control sample
 //Sep 28 2020. T.I. removed unnecessary statement 
 //Sep 28 2020. T.I. removed the case "0" for the serial command parser 
 //Sep 28 2020. T.I. created this file
@@ -40,15 +41,19 @@ void loop() {
 
     if('1'==incomingByte)
     {
-          Serial.println("rock");
+          servo_n[0].write(0);
+          servo_n[1].write(0);
+          servo_n[2].write(0);
     }
     else if('2'==incomingByte)
     {
-          Serial.println("scissors");
+
     }
     else if('3'==incomingByte)
     {
-          Serial.println("paper");
+          servo_n[0].write(90);
+          servo_n[1].write(90);
+          servo_n[2].write(90);
           
     }
     else
